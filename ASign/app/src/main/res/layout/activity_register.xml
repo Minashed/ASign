@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minan.asign.RegisterActivity">
+
+    <Button
+        android:id="@+id/bRegisterR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Sign-Up"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/etPNumber" />
+
+    <EditText
+        android:id="@+id/etFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="142dp"
+        android:layout_above="@+id/etLName"
+        android:layout_alignStart="@+id/etLName" />
+
+    <EditText
+        android:id="@+id/etLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:layout_above="@+id/etUNameR"
+        android:layout_alignStart="@+id/etUNameR" />
+
+    <EditText
+        android:id="@+id/etUNameR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_above="@+id/etPasswordR"
+        android:layout_alignStart="@+id/etPasswordR" />
+
+    <EditText
+        android:id="@+id/etPasswordR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_above="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="314dp"
+        android:layout_above="@+id/etPNumber"
+        android:layout_alignStart="@+id/etPNumber" />
+
+    <EditText
+        android:id="@+id/etPNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="357dp"
+        android:layout_above="@+id/bRegisterR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign-Up"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="85dp"
+        android:layout_above="@+id/etFName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+</RelativeLayout>

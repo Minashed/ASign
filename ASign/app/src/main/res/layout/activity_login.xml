@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minan.asign.LoginActivity">
+
+    <TextView
+        android:id="@+id/ASign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="ASign"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:layout_above="@+id/etUNameL"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etUNameL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="213dp"
+        android:layout_above="@+id/etPasswordL"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etPasswordL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/bLogin"
+        android:layout_alignStart="@+id/etUNameL" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log-In"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/bRegisterL"
+        android:layout_alignBottom="@+id/bRegisterL"
+        android:layout_alignStart="@+id/etPasswordL" />
+
+    <Button
+        android:id="@+id/bRegisterL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign-up"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:layout_marginBottom="165dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/bLogin" />
+
+</RelativeLayout>
