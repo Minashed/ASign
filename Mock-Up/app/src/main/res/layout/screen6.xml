@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/editText11"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_marginBottom="37dp" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="126dp"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_below="@+id/editText9"
+        android:layout_marginTop="45dp"
+        android:text="Notes"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignEnd="@+id/editText11"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:text="This is where you would input notes on the scheduled work" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Input date here" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText14"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="12dp"
+        android:text="Add" />
+
+</RelativeLayout>
