@@ -20,7 +20,7 @@ public class UserAreaActivity extends AppCompatActivity {
         final TextView showPassword = (TextView) findViewById(R.id.tvPassword);
 
         final TextView showEmail = (TextView) findViewById(R.id.tvEmail);
-        final TextView showPNumber = (TextView) findViewById(R.id.nvPNumber);
+        //final TextView showPNumber = (TextView) findViewById(R.id.tvPNumber);
 
         Intent intent = getIntent();
 
@@ -28,12 +28,12 @@ public class UserAreaActivity extends AppCompatActivity {
         String lname = intent.getStringExtra("lname");
 
         String uname = intent.getStringExtra("uname");
-        String password = intent.getStringExtra("fname");
+        String password = intent.getStringExtra("password");
 
         String email = intent.getStringExtra("email");
-        String pnumber = intent.getStringExtra("pnumber");
+        //String pnumber = intent.getStringExtra("pnumber");
 
-        int phonenumber = Integer.parseInt(pnumber);
+
         showFName.setText(fname);
         showLName.setText(lname);
 
@@ -41,7 +41,7 @@ public class UserAreaActivity extends AppCompatActivity {
         showPassword.setText(password);
 
         showEmail.setText(email);
-        showPNumber.setText(phonenumber);
+        //showPNumber.setText(pnumber);
 
     }
 }

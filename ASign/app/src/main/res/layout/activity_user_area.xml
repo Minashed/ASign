@@ -87,6 +87,7 @@
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="77dp" />
 
+    <!-- Commented till fixed
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -98,6 +99,7 @@
         android:layout_marginTop="61dp"
         android:layout_below="@+id/textView10"
         android:layout_alignStart="@+id/textView11" />
+    -->
 
     <TextView
         android:id="@+id/textView11"
@@ -144,13 +146,14 @@
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="125dp" />
 
-    <EditText
-        android:id="@+id/nvPNumber"
-        android:layout_width="wrap_content"
+    <!-- Commented till fixed
+    <TextView
+        android:id="@+id/tvPNumber"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/textView4"
-        android:ems="10"
-        android:inputType="phone"
-        android:layout_alignParentEnd="true" />
+        android:textSize="20sp" />
+    -->
+
 </RelativeLayout>
