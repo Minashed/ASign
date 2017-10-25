@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 
 /**
  * Created by Mina N on 10/23/2017.
+ * Used to Register an account
  */
 
 public class RegisterRequest extends StringRequest {
