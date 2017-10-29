@@ -3,13 +3,39 @@ package com.example.minan.asign;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class UserAreaActivity extends AppCompatActivity {
 
+    private void handleAddWorkClick(){
+        Intent intent = new Intent(UserAreaActivity.this, AddWorkActivity.class);
+        UserAreaActivity.this.startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user_area);
+
+        Button AddWorkButton = (Button) findViewById(R.id.baddWork);
+
+        AddWorkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                handleAddWorkClick();
+            }
+        });
+    }
+}
+
+
+
+/*
+    @Override
+    protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
 
@@ -42,6 +68,8 @@ public class UserAreaActivity extends AppCompatActivity {
 
         showEmail.setText(email);
         //showPNumber.setText(pnumber);
-
+        }
     }
-}
+*/
+
+
