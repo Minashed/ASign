@@ -11,13 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText2"
+        android:layout_alignStart="@+id/etWorkName"
         android:layout_marginTop="16dp"
         android:text="Input Work Information"
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etWorkName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
@@ -29,18 +29,18 @@
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/etWorkName"
+        android:layout_below="@+id/etWorkName"
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Course"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/etAddNotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -54,9 +54,9 @@
         android:layout_height="wrap_content"
         android:text="Additional Notes"
         android:textSize="20sp"
-        android:layout_below="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/etCourse"
+        android:layout_alignStart="@+id/etCourse" />
 
     <DatePicker
         android:id="@+id/dpDueDate"
@@ -64,8 +64,8 @@
         android:layout_height="wrap_content"
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
-        android:layout_below="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/etAddNotes"
+        android:layout_alignStart="@+id/etAddNotes"
         android:layout_marginTop="18dp" />
 
     <Button

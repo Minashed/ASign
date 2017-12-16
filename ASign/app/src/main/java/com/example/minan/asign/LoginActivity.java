@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
+
                 LoginActivity.this.startActivity(registerIntent);
             }
         });
@@ -62,6 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                                 String email = jsonResponse.getString("email");
                                 String phonenumber = jsonResponse.getString("pnumber");
 
+                                String from_where = "loginActivity";
+
                                 Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
 
                                 intent.putExtra("fname", fname);
@@ -73,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                                 intent.putExtra("email", email);
                                 intent.putExtra("phonenumber", phonenumber);
 
+                                intent.putExtra("where", from_where);
                                 LoginActivity.this.startActivity(intent);
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
